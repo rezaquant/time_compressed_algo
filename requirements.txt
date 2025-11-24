@@ -1,0 +1,15 @@
+autoray
+cotengra
+cotengrust
+jax
+jaxlib
+matplotlib
+nlopt
+numpy
+pandas
+quimb
+ray
+scipy
+torch
+tqdm
+xyzpy
