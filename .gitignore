@@ -9,4 +9,5 @@ __pycache__/
 .mypy_cache/
 cash/
 nohup.out
+store/
 store_state/
