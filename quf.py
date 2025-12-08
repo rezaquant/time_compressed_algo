@@ -6691,7 +6691,8 @@ def energy_local(MPO_origin, mps_a, L, opt):
     return E_dmrg / L
 
 def energy_global(MPO_origin, mps_a):
-    _, opt, opt_= req_backend()
+    res = req_backend()
+    opt = res["opt"]
     mps_a_ = mps_a.copy()
     mps_a_.normalize()
     p_h=mps_a_.H 
