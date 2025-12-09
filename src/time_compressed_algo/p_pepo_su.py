@@ -2,9 +2,9 @@ import quimb.tensor as qtn
 import quimb as qu
 import cotengra as ctg
 import autoray as ar
-import register_ as reg
-import algo_cooling as algo
-import quf
+from . import register_ as reg
+from . import algo_cooling as algo
+from . import quf
 import time
 import numpy as np
 from tqdm import tqdm
@@ -12,7 +12,7 @@ import nlopt
 import torch
 from torch.nn.utils import parameters_to_vector, vector_to_parameters
 from quimb.tensor.belief_propagation.l2bp import L2BP
-from gate_arb import TensorNetworkGenVector
+from .gate_arb import TensorNetworkGenVector
 
 
 import matplotlib as mpl
