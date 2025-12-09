@@ -3,7 +3,7 @@
 Tensor-network experiments focused on PEPO/PEPS compression and time-evolution optimizations. Scripts implement cooling/optimization routines and utilities; notebooks capture exploratory runs and plots.
 
 ## Layout
-- `src/time_compressed_algo/`: Python package for reusable code.
+- `src/tcompress/`: Python package for reusable code.
   - `algo_cooling.py`: cooling and tensor-network routines used across experiments.
   - `p_pepo.py`, `p_pepo_su.py`: PEPO optimization flows (standard and SU variants).
   - `Uoptimize.py`, `gate_arb.py`: optimization helpers and arbitrary-geometry tensor utilities.
@@ -20,8 +20,10 @@ Tensor-network experiments focused on PEPO/PEPS compression and time-evolution o
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-# Point Python to the package when running notebooks/scripts
-export PYTHONPATH=\"$PWD/src:$PYTHONPATH\"
+# Option A: editable install
+pip install -e .
+# Option B: point Python to the package when running notebooks/scripts
+# export PYTHONPATH=\"$PWD/src:$PYTHONPATH\"
 # For GPU JAX/PyTorch, install vendor wheels as needed.
 ```
 
